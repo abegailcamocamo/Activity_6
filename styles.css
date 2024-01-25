@@ -1,12 +1,20 @@
 body{
+    
+    background-color: cadetblue;
+}
+h1{
+    font-style: oblique;
     font-family: 'Courier New', Courier, monospace;
-    color: cadetblue;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
 }
 .flex-container{
     display: flex;
     flex-direction: row;
     background-color: bisque;
     justify-content: flex-end;
+    flex-direction: column-reverse;
     padding: 40px;
     margin-block: 30px;
     border-radius: 30px;
@@ -14,11 +22,12 @@ body{
 }
 .flex-item{
     display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
-    margin: 90px;
+    padding: 30px;
+    margin: 10px;
     text-decoration: solid;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: dodgerblue;
+    border-radius: 20px;
+    border: 10px dotted blueviolet;
     
 }
