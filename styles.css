@@ -11,23 +11,36 @@ h1{
 }
 .flex-container{
     display: flex;
-    flex-direction: row;
+    height: 200px;
+    align-items: flex-end;
     background-color: bisque;
-    justify-content: flex-end;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     padding: 40px;
-    margin-block: 30px;
     border-radius: 30px;
+    
     
 }
 .flex-item{
     display: flex;
-    padding: 30px;
+    padding: 10px;
     margin: 10px;
-    text-decoration: solid;
+    width: 150px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
     background-color: dodgerblue;
     border-radius: 20px;
     border: 10px dotted blueviolet;
-    
+}
+
+@media screen and (min-width:600px) {
+    body {
+        background-color: pink;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
